@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jollof Rice 🥛</title>
+    <style>
+      h1 {
+        text-align: center;
+        border: 1px solid rgb(4, 101, 43);
+        padding: 20px;
+        border-radius: 4px;
+        color: rgb(4, 101, 43);
+      }
+      h2 {
+        text-align: center;
+        color: rgb(4, 101, 43);
+        font-size: 20px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 14px;
+        margin: 20px 0 10px;
+        text-align: justify;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        background: rgb(4, 101, 43);
+        color: white;
+        font-size: 18px;
+        font-weight: bolder;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 7px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.7;
+        cursor: pointer;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+        background: radial-gradient(
+          circle at 7.5% 24%,
+          rgb(237, 161, 193) 0%,
+          rgb(250, 178, 172) 25.5%,
+          rgb(190, 228, 210) 62.3%,
+          rgb(215, 248, 247) 93.8%
+        );
+      }
+
+      .learn-more {
+        text-decoration: none;
+        color: rgb(4, 101, 43);
+        font-size: 12px;
+        margin-bottom: 20px;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I love Jollof Rice</h1>
+      <h2>Especially Nigerian Jollof Rice</h2>
+
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/299/original/jollof.jpg?1678657766"
+        alt="Jollof Rice"
+        width="300"
+      />
+
+      <hr />
+
+      <p>
+        <strong> Jollof rice</strong>
+        is a rice dish from West Africa. The dish is typically made with
+        long-grain rice, tomatoes, onions, spices, vegetables and meat in a
+        single pot, although its ingredients and preparation methods vary across
+        different regions. The basic profile for
+        <span>
+          <em> Nigerian jollof rice</em>
+          includes long-grain parboiled rice, tomatoes and tomato paste, pepper,
+          vegetable oil, onions, and stock cubes.
+        </span>
+        <br />
+        <br />
+        Most of the ingredients are cooked in one pot, of which a rich meat
+        stock and a fried tomato and pepper puree characteristically forms the
+        base. Rice is then added and left to cook in the liquid. The dish is
+        then served with the protein of choice and very often with fried
+        plantains, moi moi, steamed vegetables, coleslaw, salad, etc. In the
+        riverine areas of Nigeria where seafood is the main source of protein,
+        seafood often takes the place of chicken or meat as the protein of
+        choice
+      </p>
+
+      <a
+        href="https://en.wikipedia.org/wiki/Jollof_rice"
+        target="_blank"
+        class="learn-more"
+      >
+        More information on wikipedia
+      </a>
+      <button class="buy-button">👉 Buy Jollof Rice</button>
+      <p class="footer">
+        This page is built by
+        <a href="">Bukola</a>
+      </p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("what is your name?");
+        let country = prompt("Which country are you from?").toLowerCase();
+
+        if (country === "nigeria") {
+          alert("Thank you " + name + ", You must like Jollof Rice");
+        } else {
+          alert("Thank you " + name + ", You can try Jollof Rice");
+        }
+      }
+
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
